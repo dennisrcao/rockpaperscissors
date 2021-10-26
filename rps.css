@@ -1,0 +1,17 @@
+@font-face {
+    font-family: myCustomFont;
+    src: url(assets/fonts/yMJMMIlzdpvBhQQL_SC3X9yhF25-T1nyGy6BoWg1fDAlp7lk.woff);
+}
+
+body{
+    font-family: myCustomFont;
+    font-size: 48px;
+}
+
+/*.GIJOE { 
+    transform: rotateX(60deg);
+    
+    transform: rotateY(45deg);
+    transform: rotateZ(40deg);
+    */
+  }
