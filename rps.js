@@ -25,19 +25,19 @@ function playRound(playerSelection, computerSelection)
 
     if (newPlayerSelection === computerSelection) 
     {   
-        console.log("This round It's a tie!")
+        console.log("Computer picked: " + computerSelection + "  \n     This round It's a tie!")
         ties = ties + 1
     }
         
     else if ((newPlayerSelection === "Rock" &&  computerSelection === "Scissors") || (newPlayerSelection === "Paper" &&  computerSelection === "Rock") || (newPlayerSelection === "Scissors" &&  computerSelection === "Paper"))
     {
-        console.log("This round Player wins")
+        window.alert("Computer picked: "+ computerSelection + "   \n     This round Player wins " + newPlayerSelection + " beats " + computerSelection)
         playerScore = playerScore+1
        outcomeNum=1
     }
     else
     {
-        console.log("This round Computer wins")
+        window.alert("Computer picked: "+ computerSelection + "  \n    This round Computer wins "+ computerSelection + " beats " + newPlayerSelection)
         computerScore = computerScore+1
         outcomeNum=2 
     }
@@ -60,6 +60,7 @@ function game()
     {   
         let playerSelection = prompt("Choose your weapon: Rock, Paper or Scissors")        /*select random for player*/
         let computerSelection = computerPlay();
+        console.log("Round .... " + i);
         console.log("Player selected " + playerSelection);
         console.log("Computer selected " + computerSelection);
         playRound(playerSelection, computerSelection);
