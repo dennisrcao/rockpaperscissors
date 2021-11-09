@@ -1,26 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="rps.css">
-</head>
+    <link rel="stylesheet" href="rps.css" />
+  </head>
 
-<body>
-    <div class = "header">
-        <h1> Hey Kid I'm a Computer </h1>
+  <body>
+    <div class="header">
+      <h1>Hey Kid I'm a Computer</h1>
     </div>
 
-    <div class ="image">
-        <img src="assets/images/GIJOE.jpg" class ="GIJOE" alt="GI JOE" width ="800" height ="500" />
+    <div class="image">
+      <img
+        src="assets/images/GIJOE.jpg"
+        class="GIJOE"
+        alt="GI JOE"
+        width="800"
+        height="500"
+      />
     </div>
 
-    <script src="rps.js" type="text/javascript">
+    <div class="footer">
+      <div class="player_options">
+        <p><u>You Pick </u></p>
+        <div class="btnRock button">
+          <img
+            src="assets/images/rock.png"
+            width="100"
+            height="100"
+            alt="Rock"
+          />
+        </div>
+
+        <div class="btnPaper button">
+          <img
+            src="assets/images/paper.png"
+            width="100"
+            height="100"
+            alt="Paper"
+          />
+        </div>
+
+        <div class="btnScissors button">
+          <img
+            src="assets/images/scissor.png"
+            width="100"
+            height="100"
+            alt="Scissors"
+          />
+        </div>
+      </div>
+
+      <div class="computer_selects">
+        <p><u>Computer</u></p>
+        
+        <div class="comp_choice">
+          <img
+            src="assets/images/rock.png"
+            width="100"
+            height="100"
+            alt="Rock"
+          />
+        </div>
+
+        <div class="comp_choice">
+          <img
+            src="assets/images/paper.png"
+            width="100"
+            height="100"
+            alt="Paper"
+          />
+        </div>
+
+        <div class="comp_choice">
+          <img
+            src="assets/images/scissor.png"
+            width="100"
+            height="100"
+            alt="Scissors"
+          />
+        </div>
+      </div>
+
+      <div class="results">
+        <p><u>Score Tally </u></p>
+          <div class = "scoreText">
+            <p>Computer : <div id ="computerScore">0 </div> </p>
+            <p>Player : <div id ="playerScore">0 </div> </p>
+            <p>Ties: <div id = "tieScore" > 0 </div></p>
+          </div>
+      </div>
+    </div>
+
+    <script src="rps.js" type="text/javascript"></script>
+
+    <script>
+      console.log(game());
     </script>
-
-    <script> console.log(game())</script>   
-</body>
-
+  </body>
 </html>
